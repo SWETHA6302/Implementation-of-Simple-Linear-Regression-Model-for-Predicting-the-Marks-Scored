@@ -89,21 +89,21 @@ print("RMSE = ",rmse)
 ## Output:
 ![simple linear regression model for predicting the marks scored](11.png)
 
-[simple linear regression model for predicting the marks scored](22.png)
+![simple linear regression model for predicting the marks scored](22.png)
 
-[simple linear regression model for predicting the marks scored](33.png)
+![simple linear regression model for predicting the marks scored](33.png)
 
-[simple linear regression model for predicting the marks scored](44.png)
+![simple linear regression model for predicting the marks scored](44.png)
 
-[simple linear regression model for predicting the marks scored](55.png)
+![simple linear regression model for predicting the marks scored](55.png)
 
-[simple linear regression model for predicting the marks scored](66.png)
+![simple linear regression model for predicting the marks scored](66.png)
 
-[simple linear regression model for predicting the marks scored](77.png)
+![simple linear regression model for predicting the marks scored](77.png)
 
-\[simple linear regression model for predicting the marks scored](88.png)
+![simple linear regression model for predicting the marks scored](88.png)
 
-[simple linear regression model for predicting the marks scored](99.png)
+![simple linear regression model for predicting the marks scored](99.png)
 
 
 
