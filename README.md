@@ -29,32 +29,53 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.metrics import mean_absolute_error,mean_squared_error
 df=pd.read_csv('/content/student_scores.csv')
+print("df.head")
 
 df.head()
+
+print("df.tail")
+
+df.tail()
+
 Y=df.iloc[:,1].values
+print("Array of Y")
 Y
+
 X=df.iloc[:,:-1].values
+print("Array of X")
 X
+
 from sklearn.model_selection import train_test_split
 X_train,X_test,Y_train,Y_test=train_test_split(X,Y,test_size=1/3,random_state=0)
+
 from sklearn.linear_model import LinearRegression
 regressor=LinearRegression()
 regressor.fit(X_train,Y_train)
 Y_pred=regressor.predict(X_test)
+
+print("Values of Y prediction")
 Y_pred
+
+print("Array values of Y test")
 Y_test
+
 plt.scatter(X_train,Y_train,color="orange")
 plt.plot(X_train,regressor.predict(X_train),color="red")
 plt.title("Hours Vs Scores (Training Set)")
 plt.xlabel("Hours")
 plt.ylabel("Scores")
+print("Training Set Graph")
 plt.show()
+
 plt.scatter(X_test,Y_test,color="blue")
 plt.plot(X_test,regressor.predict(X_test),color="black")
 plt.title("Hours Vs Scores (Training Set)")
 plt.xlabel("Hours")
 plt.ylabel("Scores")
+print("Test Set Graph")
 plt.show()
+
+print("Values of MSE, MAE and RMSE")
 mse=mean_squared_error(Y_test,Y_pred)
 print('MSE = ',mse)
 
@@ -66,21 +87,23 @@ print("RMSE = ",rmse)
 ```
 
 ## Output:
-![simple linear regression model for predicting the marks scored](1.png)
+![simple linear regression model for predicting the marks scored](11.png)
 
-![simple linear regression model for predicting the marks scored](2.png)
+[simple linear regression model for predicting the marks scored](22.png)
 
-![simple linear regression model for predicting the marks scored](3.png)
+[simple linear regression model for predicting the marks scored](33.png)
 
-![simple linear regression model for predicting the marks scored](4.png)
+[simple linear regression model for predicting the marks scored](44.png)
 
-![simple linear regression model for predicting the marks scored](5.png)
+[simple linear regression model for predicting the marks scored](55.png)
 
-![simple linear regression model for predicting the marks scored](6.png)
+[simple linear regression model for predicting the marks scored](66.png)
 
-![simple linear regression model for predicting the marks scored](7.png)
+[simple linear regression model for predicting the marks scored](77.png)
 
-![simple linear regression model for predicting the marks scored](8.png)
+\[simple linear regression model for predicting the marks scored](88.png)
+
+[simple linear regression model for predicting the marks scored](99.png)
 
 
 
